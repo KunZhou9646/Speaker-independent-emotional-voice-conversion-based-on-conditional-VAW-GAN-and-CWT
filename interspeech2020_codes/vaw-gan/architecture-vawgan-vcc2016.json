@@ -1,0 +1,49 @@
+{
+	"mode": "VAWGAN",    
+	"hwc": [513, 1, 1],
+	"z_dim": 128,
+	"y_dim": 10,
+	"y_emb_dim": 128,
+	"f_dim": 1,
+	"f_emb_dim": 1,
+	"discriminator": {
+        "merge_dim": 1024,
+		"kernel": [[7, 1], [7, 1], [115, 1]],
+		"stride": [[3, 1], [3, 1], [3, 1]],
+		"output": [16, 32, 64],
+		"l2-reg": 1e-6,
+		"feature_layer": 1
+    },
+    "encoder": {
+        "kernel": [[7, 1], [7, 1], [7, 1], [7, 1], [7, 1]],
+		"stride": [[3, 1], [3, 1], [3, 1], [3, 1], [3, 1]],
+		"output": [16, 32, 64, 128, 256],
+		"l2-reg": 1e-6
+	},
+	"generator": {
+        "hwc": [19, 1, 81],
+		"merge_dim": 171,
+		"kernel": [[9, 1], [7, 1], [7, 1], [1025, 1]],
+		"stride": [[3, 1], [3, 1], [3, 1], [1, 1]],
+		"output": [32, 16, 8, 1],
+		"l2-reg": 1e-6
+    },
+	"training": {
+		"src_dir": "../data/bin/training_set/Neutral/*.bin",
+		"trg_dir": "../data/bin/training_set/Angry/*.bin",
+		"batch_size": 256,
+		"lr": 1e-5,
+		"lr_schedule": [ [999, 1e-4]],
+		"beta1": 0.5,
+		"beta2": 0.999,
+        "nIterD": 5,
+        "lambda": 10,
+		"max_iter": 200000,
+		"epoch_vae": 15,
+		"epoch_vawgan": 45,
+		"gamma": 50,
+		"n_unroll": 5,
+		"n_unroll_intense": 100,
+		"clamping": 0.01
+	}
+}
