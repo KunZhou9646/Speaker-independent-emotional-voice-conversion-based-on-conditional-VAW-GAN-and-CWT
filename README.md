@@ -38,3 +38,5 @@ source activate [your env]
 ```bash
 ./convert.sh
 ```
+**Note:** 
+The codes are based on VAW-GAN Voice Conversion: https://github.com/JeremyCCHsu/vae-npvc/tree/vawgan
