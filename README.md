@@ -23,7 +23,7 @@ This is the implementation of the paper "[Converting anyone's emotion: steps tow
 
 ## Usage
 ```bash
-# source activate [your env]
+source activate [your env]
 ```
 
 
