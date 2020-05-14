@@ -22,19 +22,19 @@ This is the implementation of the paper "[Converting anyone's emotion: steps tow
 <br/>
 
 ## Usage
-1. Activate your virtual enviroment.
+1. **Activate your virtual enviroment.**
 ```bash
 source activate [your env]
 ```
-2. Train VAW-GAN for prosody.
+2. **Train VAW-GAN for prosody.**
 ```bash
 ./train_f0.sh
 ```
-3. Train VAW-GAN for spectrum.
+3. **Train VAW-GAN for spectrum.**
 ```bash
 ./train_sp.sh
 ```
-4. Generate the converted emotional speech.
+4. **Generate the converted emotional speech.**
 ```bash
 ./convert.sh
 ```
