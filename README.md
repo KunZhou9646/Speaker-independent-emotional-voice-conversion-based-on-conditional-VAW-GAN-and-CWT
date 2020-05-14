@@ -22,6 +22,7 @@ This is the implementation of the paper "[Converting anyone's emotion: steps tow
 <br/>
 
 ## Usage
+1. Activate your virtual enviroment.
 ```bash
 source activate [your env]
 ```
