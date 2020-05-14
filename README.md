@@ -21,5 +21,8 @@ This is the implementation of the paper "[Converting anyone's emotion: steps tow
   - scipy
 <br/>
 
+## Usage
+```bash
+# source activate [your env]
 
 
