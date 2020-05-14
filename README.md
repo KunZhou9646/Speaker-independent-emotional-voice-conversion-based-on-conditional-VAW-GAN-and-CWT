@@ -6,14 +6,20 @@ This is the implementation of the paper "[Converting anyone's emotion: steps tow
 ## Getting Started
 
 ### Prerequisites
-```
-* python 3.5
-* numpy 1.14
-* soundfile
-* pyworld
-* tensorflow-gpu 1.5.0
-* librosa
-```
+
+- Ubuntu 16.04  
+- Python 3.6 
+  - Tensorflow-gpu 1.5.0
+  - PyWorld
+  - librosa
+  - soundfile
+  - numpy 1.14.0
+  - sklearn
+  - glob
+  - sprocket-vc
+  - pycwt
+  - scipy
+<br/>
 
 
 
