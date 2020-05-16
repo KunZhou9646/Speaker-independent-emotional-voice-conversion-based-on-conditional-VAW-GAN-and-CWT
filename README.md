@@ -1,7 +1,7 @@
 # Speaker-independent-emotional-voice-conversion-based-on-conditional-VAW-GAN-and-CWT
 
 This is the implementation of the paper "[Converting anyone's emotion: steps towards speaker-independent emotional voice conversion][paper link]". Please kindly cite our paper if you are using our codes.
-[paper link]: www.
+[paper link]: https://www.researchgate.net/publication/341388058_Converting_Anyone's_Emotion_Towards_Speaker-Independent_Emotional_Voice_Conversion
 
 ## Getting Started
 
