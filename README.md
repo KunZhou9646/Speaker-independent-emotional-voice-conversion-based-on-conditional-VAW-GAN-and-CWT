@@ -39,10 +39,12 @@ source activate [your env]
 3. **Train VAW-GAN for prosody.**
 ```bash
 ./train_f0.sh
+# Remember to change the source and target dir in "architecture-vawgan-vcc2016.json"
 ```
 4. **Train VAW-GAN for spectrum.**
 ```bash
 ./train_sp.sh
+# Remember to change the source and target dir in "architecture-vawgan-vcc2016.json"
 ```
 5. **Generate the converted emotional speech.**
 ```bash
