@@ -15,7 +15,7 @@ args = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string('corpus_name', 'emotion_vc', 'Corpus name')
 
 #tf.app.flags.DEFINE_string('checkpoint_f0_cwt', './logdir/train/0314-1323-50-2020/model.ckpt-46860', 'root of log dir')
-tf.app.flags.DEFINE_string('checkpoint_f0_cwt', './logdir/train/0409-1050-39-2020/model.ckpt-46860', 'root of log dir')
+tf.app.flags.DEFINE_string('checkpoint_f0_cwt', './logdir/train/[TIMESTEP]/model.ckpt-[MODEL ID]', 'root of log dir')
 
 tf.app.flags.DEFINE_string('src', 'Neutral', 'source speaker')
 tf.app.flags.DEFINE_string('trg', 'Angry', 'target speaker')
@@ -117,6 +117,9 @@ def main(unused_args=None):
     y_s_f0 = features['speaker']
     y_t_id_f0 = tf.placeholder(dtype=tf.int64, shape=[1,])
     y_t_f0 = y_t_id_f0 * tf.ones(shape=[tf.shape(f0_cwt)[0],], dtype=tf.int64)
+    if not os.path.isdir('./f0_results'):
+        os.mkdir('./f0_results')
+
 
 # convert f0:
     machine_f0 = MODEL(arch_f0, is_training=False)
