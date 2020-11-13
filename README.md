@@ -24,8 +24,10 @@ This is the implementation of the Interspeech 2020 paper "[Converting anyone's e
 ## Usage
 1. **Prepare your dataset.**
 Please follow the file structure:
-training_dir: ./data/wav/training_set/**/**.wav
-evaluation_dir ./data/wav/evaluation_set/**/**.wav
+
+training_dir: ./data/wav/training_set/*/*.wav
+
+evaluation_dir ./data/wav/evaluation_set/*/*.wav
 
 For example: "./data/wav/training_set/Angry/0001.wav"
 
