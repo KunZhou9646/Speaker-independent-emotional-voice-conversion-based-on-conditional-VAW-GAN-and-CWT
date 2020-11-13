@@ -53,6 +53,9 @@ def post_processing(features, scales, mean_f0_target, std_f0_target, para_lf0_cw
     return f0_t
 
 source_data_dir = './f0_results'
+if not os.path.isdir('./final_results'):
+
+   os.mkdir('./final_results')
 
 
 freq = 16000
