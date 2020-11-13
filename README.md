@@ -22,19 +22,26 @@ This is the implementation of the Interspeech 2020 paper "[Converting anyone's e
 <br/>
 
 ## Usage
-1. **Activate your virtual enviroment.**
+1. **Prepare your dataset.**
+Please follow the file structure:
+training_dir: ./data/wav/training_set/**/**.wav
+evaluation_dir ./data/wav/evaluation_set/**/**.wav
+
+For example: "./data/wav/training_set/Angry/0001.wav"
+
+2. **Activate your virtual enviroment.**
 ```bash
 source activate [your env]
 ```
-2. **Train VAW-GAN for prosody.**
+3. **Train VAW-GAN for prosody.**
 ```bash
 ./train_f0.sh
 ```
-3. **Train VAW-GAN for spectrum.**
+4. **Train VAW-GAN for spectrum.**
 ```bash
 ./train_sp.sh
 ```
-4. **Generate the converted emotional speech.**
+5. **Generate the converted emotional speech.**
 ```bash
 ./convert.sh
 ```
